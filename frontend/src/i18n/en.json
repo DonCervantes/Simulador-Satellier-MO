@@ -1,0 +1,94 @@
+{
+  "app": {
+    "title": "Satellier Simulador",
+    "subtitle": "Space Mission Simulator"
+  },
+  "mode": {
+    "educational": "Educational",
+    "professional": "Professional"
+  },
+  "panels": {
+    "orbital_elements": "Orbital Elements",
+    "maneuvers": "Maneuver Planner",
+    "perturbations": "Perturbations",
+    "performance": "Performance"
+  },
+  "orbital_elements": {
+    "semi_major_axis": "Semi-Major Axis",
+    "eccentricity": "Eccentricity",
+    "inclination": "Inclination",
+    "raan": "RAAN",
+    "arg_perigee": "Argument of Perigee",
+    "mean_anomaly": "Mean Anomaly",
+    "true_anomaly": "True Anomaly",
+    "period": "Orbital Period",
+    "mean_motion": "Mean Motion",
+    "periapsis": "Periapsis Altitude",
+    "apoapsis": "Apoapsis Altitude",
+    "orbit_type": "Orbit Type",
+    "raan_drift": "RAAN Drift (J₂)",
+    "apsidal_drift": "Apsidal Drift (J₂)",
+    "bstar": "B* Drag Term",
+    "tooltips": {
+      "semi_major_axis": "The semi-major axis defines the size of the orbit. For a circular orbit, it equals the orbital radius.",
+      "eccentricity": "Eccentricity describes the shape: 0 = circle, 0–1 = ellipse, 1 = parabola, >1 = hyperbola.",
+      "inclination": "The angle between the orbital plane and Earth's equatorial plane. 0° = equatorial, 90° = polar.",
+      "raan": "Right Ascension of the Ascending Node — the 'longitude' of the orbital plane in inertial space.",
+      "arg_perigee": "Angle from the ascending node to the perigee point, measured in the orbital plane.",
+      "mean_anomaly": "A fictitious angle that grows linearly with time, used to locate the satellite in its orbit.",
+      "period": "Time to complete one full orbit.",
+      "raan_drift": "Due to Earth's J₂ oblateness, the orbital plane precesses westward for prograde orbits.",
+      "bstar": "Ballistic coefficient used in SGP4/SDP4 drag modelling. Units: 1/R⊕."
+    }
+  },
+  "maneuvers": {
+    "hohmann": "Hohmann Transfer",
+    "bielliptic": "Bi-Elliptic Transfer",
+    "plane_change": "Plane Change",
+    "target_radius": "Target Orbit Radius",
+    "intermediate_radius": "Intermediate Radius",
+    "delta_v": "Total Δv",
+    "delta_v1": "Δv₁",
+    "delta_v2": "Δv₂",
+    "delta_v3": "Δv₃",
+    "tof": "Transfer Time",
+    "mass_ratio": "Mass Ratio",
+    "propellant": "Propellant Fraction",
+    "isp": "Specific Impulse",
+    "efficiency": "vs Hohmann",
+    "more_efficient": "More efficient",
+    "less_efficient": "Less efficient",
+    "tooltips": {
+      "hohmann": "Most fuel-efficient two-burn transfer between two coplanar circular orbits.",
+      "bielliptic": "Three-burn transfer, more efficient than Hohmann when r₂/r₁ > 11.94.",
+      "plane_change": "Rotates the orbital plane. Very expensive in Δv — best done at apogee of a highly eccentric orbit."
+    }
+  },
+  "time": {
+    "now": "Now",
+    "utc": "UTC",
+    "speed": "Speed",
+    "paused": "Paused"
+  },
+  "search": {
+    "placeholder": "Search satellite name or NORAD ID…",
+    "no_results": "No satellites found",
+    "all": "ALL",
+    "count": "{{count}} satellites"
+  },
+  "units": {
+    "km": "km",
+    "km_s": "km/s",
+    "deg": "°",
+    "rad": "rad",
+    "min": "min",
+    "h": "h",
+    "rev_day": "rev/day",
+    "deg_day": "°/day"
+  },
+  "errors": {
+    "satellite_not_found": "Satellite not found",
+    "propagation_failed": "Propagation failed",
+    "websocket_error": "Connection error"
+  }
+}

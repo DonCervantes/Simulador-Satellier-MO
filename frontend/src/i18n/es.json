@@ -1,0 +1,94 @@
+{
+  "app": {
+    "title": "Satellier Simulador",
+    "subtitle": "Simulador de Misiones Espaciales"
+  },
+  "mode": {
+    "educational": "Educativo",
+    "professional": "Profesional"
+  },
+  "panels": {
+    "orbital_elements": "Elementos Orbitales",
+    "maneuvers": "Planificador de Maniobras",
+    "perturbations": "Perturbaciones",
+    "performance": "Rendimiento"
+  },
+  "orbital_elements": {
+    "semi_major_axis": "Semieje Mayor",
+    "eccentricity": "Excentricidad",
+    "inclination": "Inclinación",
+    "raan": "RAAN",
+    "arg_perigee": "Argumento del Perigeo",
+    "mean_anomaly": "Anomalía Media",
+    "true_anomaly": "Anomalía Verdadera",
+    "period": "Período Orbital",
+    "mean_motion": "Movimiento Medio",
+    "periapsis": "Altitud del Perigeo",
+    "apoapsis": "Altitud del Apogeo",
+    "orbit_type": "Tipo de Órbita",
+    "raan_drift": "Deriva RAAN (J₂)",
+    "apsidal_drift": "Precesión Apsidal (J₂)",
+    "bstar": "Término de Arrastre B*",
+    "tooltips": {
+      "semi_major_axis": "El semieje mayor define el tamaño de la órbita. Para una órbita circular, es igual al radio orbital.",
+      "eccentricity": "La excentricidad describe la forma: 0 = círculo, 0–1 = elipse, 1 = parábola, >1 = hipérbola.",
+      "inclination": "Ángulo entre el plano orbital y el plano ecuatorial terrestre. 0° = ecuatorial, 90° = polar.",
+      "raan": "Ascensión Recta del Nodo Ascendente — la 'longitud' del plano orbital en el espacio inercial.",
+      "arg_perigee": "Ángulo desde el nodo ascendente hasta el perigeo, medido en el plano orbital.",
+      "mean_anomaly": "Ángulo ficticio que crece linealmente con el tiempo, usado para ubicar el satélite en su órbita.",
+      "period": "Tiempo para completar una órbita completa.",
+      "raan_drift": "Debido al achatamiento J₂ de la Tierra, el plano orbital precesa hacia el oeste en órbitas progradas.",
+      "bstar": "Coeficiente balístico usado en el modelado de arrastre SGP4/SDP4. Unidades: 1/R⊕."
+    }
+  },
+  "maneuvers": {
+    "hohmann": "Transferencia de Hohmann",
+    "bielliptic": "Transferencia Bi-Elíptica",
+    "plane_change": "Cambio de Plano",
+    "target_radius": "Radio de Órbita Objetivo",
+    "intermediate_radius": "Radio Intermedio",
+    "delta_v": "Δv Total",
+    "delta_v1": "Δv₁",
+    "delta_v2": "Δv₂",
+    "delta_v3": "Δv₃",
+    "tof": "Tiempo de Transferencia",
+    "mass_ratio": "Razón de Masa",
+    "propellant": "Fracción de Propelente",
+    "isp": "Impulso Específico",
+    "efficiency": "vs Hohmann",
+    "more_efficient": "Más eficiente",
+    "less_efficient": "Menos eficiente",
+    "tooltips": {
+      "hohmann": "Transferencia de dos impulsos más eficiente en combustible entre dos órbitas circulares coplanares.",
+      "bielliptic": "Transferencia de tres impulsos, más eficiente que Hohmann cuando r₂/r₁ > 11.94.",
+      "plane_change": "Rota el plano orbital. Muy costosa en Δv — mejor realizarla en el apogeo de una órbita altamente excéntrica."
+    }
+  },
+  "time": {
+    "now": "Ahora",
+    "utc": "UTC",
+    "speed": "Velocidad",
+    "paused": "Pausado"
+  },
+  "search": {
+    "placeholder": "Buscar nombre de satélite o ID NORAD…",
+    "no_results": "No se encontraron satélites",
+    "all": "TODOS",
+    "count": "{{count}} satélites"
+  },
+  "units": {
+    "km": "km",
+    "km_s": "km/s",
+    "deg": "°",
+    "rad": "rad",
+    "min": "min",
+    "h": "h",
+    "rev_day": "rev/día",
+    "deg_day": "°/día"
+  },
+  "errors": {
+    "satellite_not_found": "Satélite no encontrado",
+    "propagation_failed": "Falló la propagación",
+    "websocket_error": "Error de conexión"
+  }
+}

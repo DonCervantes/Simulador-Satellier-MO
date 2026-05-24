@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\nodejs\"; cd \"C:\\\\Users\\\\cruzc\\\\Satellier-Simulador\\\\frontend\"; npm run build 2>&1)",
+      "PowerShell(& \"$env:TEMP\\\\rustup-init.exe\" -y --default-toolchain stable 2>&1)",
+      "PowerShell($env:PATH = $env:PATH + \";$env:USERPROFILE\\\\.cargo\\\\bin\"; rustc --version; cargo --version)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(npx vite *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173)",
+      "Bash(sleep 3; cat /c/Users/cruzc/AppData/Local/Temp/claude/C--Users-cruzc-Satellier-Simulador/be259671-b905-4551-94de-7fa45e0f38c6/tasks/bd91etqtk.output 2>/dev/null || echo \"file not ready\")",
+      "Skill(anthropic-skills:consolidate-memory)",
+      "Skill(anthropic-skills:consolidate-memory:*)",
+      "Bash(where python3.12)",
+      "Bash(where python3 *)",
+      "Read(//usr/local/**)",
+      "Read(//usr/**)",
+      "Bash(\"/c/Program Files/nodejs/npm.cmd\" run build)",
+      "Bash(ls \"/c/Program Files/nodejs/\" | head -20)",
+      "Bash(PATH='/c/Program Files/nodejs:__TRACKED_VAR__' '/c/Program Files/nodejs/npm.cmd' run build)",
+      "Bash(PATH='/c/Program Files/nodejs:__TRACKED_VAR__' npm run build)",
+      "Bash(PATH='/c/Program Files/nodejs:__TRACKED_VAR__' npm run dev)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
