@@ -5,6 +5,10 @@ import wasm from 'vite-plugin-wasm';
 import topLevelAwait from 'vite-plugin-top-level-await';
 
 export default defineConfig({
+  // GitHub Pages sirve desde /Simulador-Satellier-MO/ en producción
+  // En desarrollo (localhost) usa '/'
+  base: process.env.GITHUB_ACTIONS ? '/Simulador-Satellier-MO/' : '/',
+
   plugins: [
     react(),
     cesium(),         // copies CesiumJS static assets, sets CESIUM_BASE_URL
