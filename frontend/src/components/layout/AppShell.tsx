@@ -23,7 +23,9 @@ import { useMissionStore }      from '../../store/missionStore';
 import { MissionWizard }        from '../panels/MissionWizard';
 
 // Satellite catalog JSON — served from public/data/
-const CATALOG_URL = '/data/satellites.json';
+// Use import.meta.env.BASE_URL so the path stays correct both on localhost
+// (/data/satellites.json) and on GitHub Pages (/Simulador-Satellier-MO/data/satellites.json)
+const CATALOG_URL = `${import.meta.env.BASE_URL}data/satellites.json`;
 
 export function AppShell() {
   usePropagation();  // starts the RAF propagation loop
